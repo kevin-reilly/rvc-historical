@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "museum",
+        "stop": 1,
+        "name": "The Museum of the Village of Rockville Centre",
+        "address": "28 Hempstead Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64741250872612,
+          40.66195403963738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "water",
+        "stop": 2,
+        "name": "Wright Pond"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64707857370377,
+          40.661679871909435
+        ]
+      }
+    }
+  ]
+}
