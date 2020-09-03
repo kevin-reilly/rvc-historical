@@ -35,6 +35,78 @@
           40.661679871909435
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "school",
+        "stop": 3,
+        "name": "St. Agnes Elementary School",
+        "address": "70 Clinton Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64627256989479,
+          40.660258657870834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "religious-christian",
+        "stop": 4,
+        "name": "Ascension Episcopal Church",
+        "address": "71 North Village Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64776253700256,
+          40.65920569880873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "building",
+        "stop": 5,
+        "name": "The Tudor Apartments",
+        "address": "12 Hempstead Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64787250757217,
+          40.66155779315221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "stop": 6,
+        "name": "St. Agnes Convent",
+        "address": "1 Quealy Place"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64752247929573,
+          40.6597428626099
+        ]
+      }
     }
   ]
 }
