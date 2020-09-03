@@ -111,16 +111,128 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#f60404",
+        "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": "",
-        "name": "test"
+        "marker-symbol": "religious-christian",
+        "name": "St. Agnes Cathedral",
+        "address": "29 Quealy Place",
+        "stop": 7
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.64718854427338,
-          40.65865835700159
+          -73.64629402756691,
+          40.65949615439362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "town-hall",
+        "name": "The Eugene J. Murray Village Hall",
+        "address": "1 College Place",
+        "stop": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64548534154892,
+          40.65944782999698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 0,
+        "stroke-opacity": 1,
+        "fill": "#f8fab2",
+        "fill-opacity": 0.5,
+        "name": "Business District",
+        "stop": 9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.64509508013725,
+              40.658530168494345
+            ],
+            [
+              -73.6447973549366,
+              40.658530168494345
+            ],
+            [
+              -73.6447973549366,
+              40.65892897637459
+            ],
+            [
+              -73.64509508013725,
+              40.65892897637459
+            ],
+            [
+              -73.64509508013725,
+              40.658530168494345
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "rail",
+        "name": "Railroad Station Plaza",
+        "stop": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64546656608582,
+          40.65827989498461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bank",
+        "name": "Bank Building",
+        "stop": 11,
+        "address": "41 Front Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6458595097065,
+          40.65861155805131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "library",
+        "name": "The Old Carnegie Library Building",
+        "stop": 12,
+        "address": "11 Clinton Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64583939313889,
+          40.658936097922215
         ]
       }
     }
