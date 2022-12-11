@@ -1,6 +1,19 @@
 <body>
     <head>
-        <link rel="stylesheet" href="simple.css">
+        <title>GeoJSON</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Leaflet Style Sheet -->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" 
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+            
+        <!-- Leaflet JS -->    
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+
     </head>
 
 <h1>The Phillips House</h1>
@@ -10,9 +23,272 @@
 <p>
     This is a map of a walking tour of Rockville Centre Starting at the Phillips House.
 </p>
+<p>
+    This is a second line to this page.
+</p>
 
-<div class="map">
-<iframe width="100%" height="900" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/RVC-Historical-YEYrOallTGazb6c9AUO11FC?lat=40.660709&lon=-73.648145&zoom=16.902"></iframe>
+<div id="map">
+    
+    <script>
+
+    var map = L.map('map').setView([40.66,-73.6466], 17);
+
+    L.tileLayer('http://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var geojsonFeature = {
+        "type": "FeatureCollection",
+        "features": [
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "museum",
+                "stop": 1,
+                "name": "The Museum of the Village of Rockville Centre",
+                "address": "28 Hempstead Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64741250872612,
+                40.66195403963738
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "water",
+                "stop": 2,
+                "name": "Wright Pond"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64707857370377,
+                40.661679871909435
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "school",
+                "stop": 3,
+                "name": "St. Agnes Elementary School",
+                "address": "70 Clinton Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64627256989479,
+                40.660258657870834
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "religious-christian",
+                "stop": 4,
+                "name": "Ascension Episcopal Church",
+                "address": "71 North Village Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64776253700256,
+                40.65920569880873
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "building",
+                "stop": 5,
+                "name": "The Tudor Apartments",
+                "address": "12 Hempstead Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64787250757217,
+                40.66155779315221
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "stop": 6,
+                "name": "St. Agnes Convent",
+                "address": "1 Quealy Place"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64752247929573,
+                40.6597428626099
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "religious-christian",
+                "name": "St. Agnes Cathedral",
+                "address": "29 Quealy Place",
+                "stop": 7
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64629402756691,
+                40.65949615439362
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "town-hall",
+                "name": "The Eugene J. Murray Village Hall",
+                "address": "1 College Place",
+                "stop": 8
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64548534154892,
+                40.65944782999698
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "stroke": "#555555",
+                "stroke-width": 0,
+                "stroke-opacity": 1,
+                "fill": "#f8fab2",
+                "fill-opacity": 0.5,
+                "name": "Business District",
+                "stop": 9
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                [
+                    [
+                    -73.64509508013725,
+                    40.658530168494345
+                    ],
+                    [
+                    -73.6447973549366,
+                    40.658530168494345
+                    ],
+                    [
+                    -73.6447973549366,
+                    40.65892897637459
+                    ],
+                    [
+                    -73.64509508013725,
+                    40.65892897637459
+                    ],
+                    [
+                    -73.64509508013725,
+                    40.658530168494345
+                    ]
+                ]
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "rail",
+                "name": "Railroad Station Plaza",
+                "stop": 10
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64546656608582,
+                40.65827989498461
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "bank",
+                "name": "Bank Building",
+                "stop": 11,
+                "address": "41 Front Street"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.6458595097065,
+                40.65861155805131
+                ]
+            }
+            },
+            {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "library",
+                "name": "The Old Carnegie Library Building",
+                "stop": 12,
+                "address": "11 Clinton Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                -73.64583939313889,
+                40.658936097922215
+                ]
+            }
+            }
+        ]
+        }
+
+        L.geoJSON(geojsonFeature, {
+            onEachFeature: function(feature, layer) {
+                layer.bindPopup(feature.properties.name  + '<br>' + feature.properties.address)
+            }
+        }).addTo(map);
+
+    </script>
+
 </div>
 
 </body>
+
+

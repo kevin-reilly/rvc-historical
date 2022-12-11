@@ -1,0 +1,61 @@
+<body>
+    <head>
+        <title>Walking Tour of RVC</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <!-- Leaflet Style Sheet -->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" 
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+            
+        <!-- Leaflet JS -->    
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+
+        <!-- Leaflet AJAXJS -->
+
+        <script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
+
+        <style>
+            #map { height: 100% }
+        </style>
+
+    </head>
+
+<h1>The Phillips House</h1>
+
+<h2>Walking Tour of Rockville Centre</h2>
+
+<p>
+    This is a map of a walking tour of Rockville Centre Starting at the Phillips House.
+</p>
+<p>
+    This is a second line to this page.
+</p>
+
+<div id="map">
+    
+    <script>
+
+    var map = L.map('map').setView([40.66,-73.6466], 17);
+
+    L.tileLayer('http://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var geojsonLayer = new L.geoJSON("rvc_history.geojson");
+    
+    geojsonLayer.addTo(map);
+
+    
+    </script>
+
+</div>
+
+</body>
+
+

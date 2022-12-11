@@ -1,0 +1,79 @@
+<body>
+    <head>
+        <title>Simple</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Leaflet Style Sheet -->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" 
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+            
+        <!-- Leaflet JS -->    
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+    
+        <style>
+            #map { height: 100% }
+        </style>
+
+    </head>
+
+<h1>The Phillips House</h1>
+
+<h2>Walking Tour of Rockville Centre</h2>
+
+<p>
+    This is a map of a walking tour of Rockville Centre Starting at the Phillips House.
+</p>
+<p>
+    This is a second line to this page.
+</p>
+
+<div id="map">
+    
+    <script>
+
+    var map = L.map('map').setView([40.66,-73.6466], 17);
+
+    L.tileLayer('http://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // House
+    L.marker([40.66195403963738, -73.64741250872612]).addTo(map);
+    
+    // Pond
+    L.marker([40.661679871909435, -73.64707857370377]).addTo(map);
+
+    // St. Agnes Elementary School
+    var geojsonFeature = {
+        "type": "Feature",
+        "properties": {
+            "marker-color": "#7e7e7e",
+            "marker-size": "medium",
+            "marker-symbol": "school",
+            "stop": 3,
+            "name": "St. Agnes Elementary School",
+            "address": "70 Clinton Avenue"
+            },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64627256989479,
+          40.660258657870834
+        ]
+      }
+    };
+    
+    L.geoJSON(geojsonFeature).addTo(map);
+
+
+    </script>
+
+</div>
+
+</body>
+

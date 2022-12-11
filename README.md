@@ -21,4 +21,3 @@ Put this code in the map div:
 
 `geojsonLayer.addTo(map);`
  
-Still have not figured this out correctly
