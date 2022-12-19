@@ -16,7 +16,7 @@
   --preformatted: #444;
   --marked: #ffdd33;
   --disabled: #efefef;
-}
+} 
 
 body {
     font-family: var(--sans-font);
@@ -27,28 +27,52 @@ body {
     margin-left: 100px
   }
   
-  h1 {
-    font-family: var(--sans-font);
-    font-size: 36;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-  }
+h1 {
+  font-family: var(--sans-font);
+  font-size: 36;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
-  h2{
-    font-family: var(--sans-font);
-    font-size: 28;
-    color: #5e6066    
-  }
+h2 {
+  font-family: var(--sans-font);
+  font-size: 28;
+  color: #5e6066    
+}
   
-  p {
-    font-family: var(--sans-font);
-    font-size: 14px;
-    margin-bottom: 24px
-  }
+p {
+  font-family: var(--sans-font);
+  font-size: 18px;
+  margin-bottom: 24px
+}
 
-  #map { 
-    height: 100%; 
-    width: 100%;
-    align-content: center;
+#map { 
+  height: 100%; 
+  width: 100%;
+  align-content: center;
+}
+
+.popup_name {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+.popup_address {
+  font-size: 16px;
+  color: gray;
+}
+
+/* Media query for screens smaller than 500px wide */
+
+@media (max-width: 500px) {
+  body {
+    font-size: 30px;
+    background-color: red;
+    line-height: 1.4;
   }
+  p{
+    font-size: 30px;
+  }
+}

@@ -24,7 +24,7 @@
     This is a map of a walking tour of Rockville Centre Starting at the Phillips House.
 </p>
 <p>
-    This is a second line to this page.
+    This is a second line to this page.  I have modified this.
 </p>
 
 <div id="map">
@@ -281,7 +281,7 @@
 
         L.geoJSON(geojsonFeature, {
             onEachFeature: function(feature, layer) {
-                layer.bindPopup(feature.properties.name  + '<br>' + feature.properties.address)
+                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '</div class="popup_address">')
             }
         }).addTo(map);
 
