@@ -54,25 +54,38 @@ p {
 }
 
 .popup_name {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
-  color: blue;
+  color: blue
 }
 
 .popup_address {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray
+}
+
+.popup_description {
   font-size: 16px;
-  color: gray;
+  color: gray
 }
 
 /* Media query for screens smaller than 500px wide */
 
 @media (max-width: 500px) {
   body {
-    font-size: 30px;
+    /*font-size: 30px; */
     background-color: red;
-    line-height: 1.4;
+    /* line-height: 1.4; */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 10px
   }
+  
+
+
   p{
-    font-size: 30px;
+    font-size: 16px;
   }
 }

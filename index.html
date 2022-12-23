@@ -49,7 +49,8 @@
                 "marker-symbol": "museum",
                 "stop": 1,
                 "name": "The Museum of the Village of Rockville Centre",
-                "address": "28 Hempstead Avenue"
+                "address": "28 Hempstead Avenue",
+                "description": "One of few Victorians left in Rockville Centre, the Samuel F. Phillips House, named after a local sea captain, was built in 1882. In the early 1970s, the house was nearly torn down, but instead the Village Board of Trustees arranged to have it donated it was moved and turned into a museum.  The house was purchased for $1 and in 1975, it was relocated by truck from North Village Avenue to its current location at 28 Hempstead Avenue and officially opened as a fully decorated museum in 1978."
             },
             "geometry": {
                 "type": "Point",
@@ -281,7 +282,7 @@
 
         L.geoJSON(geojsonFeature, {
             onEachFeature: function(feature, layer) {
-                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '</div class="popup_address">')
+                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">')
             }
         }).addTo(map);
 
