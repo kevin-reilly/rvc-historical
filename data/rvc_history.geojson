@@ -9,7 +9,8 @@
         "marker-symbol": "museum",
         "stop": 1,
         "name": "The Museum of the Village of Rockville Centre",
-        "address": "28 Hempstead Avenue"
+        "address": "28 Hempstead Avenue",
+        "description": "One of few Victorians left in Rockville Centre, the Samuel F. Phillips House, named after a local sea captain, was built in 1882. In the early 1970s, the house was nearly torn down, but instead the Village Board of Trustees arranged to have it donated it was moved and turned into a museum.  The house was purchased for $1 and in 1975, it was relocated by truck from North Village Avenue to its current location at 28 Hempstead Avenue and officially opened as a fully decorated museum in 1978."
       },
       "geometry": {
         "type": "Point",
@@ -26,7 +27,9 @@
         "marker-size": "medium",
         "marker-symbol": "water",
         "stop": 2,
-        "name": "Wright Pond"
+        "name": "Wright Pond",
+        "address": " ",
+        "description": "Across from the Museum there once was a large pond named for the Wright Family, who occupied a large home on the property where Home Goods now stands. The pond became a popular place on which to go ice skating. Wright’s Pond was eventually filled in and became, in part, the parking lot for the Clinton Avenue School."
       },
       "geometry": {
         "type": "Point",
@@ -44,7 +47,8 @@
         "marker-symbol": "school",
         "stop": 3,
         "name": "St. Agnes Elementary School",
-        "address": "70 Clinton Avenue"
+        "address": "70 Clinton Avenue",
+        "description": "St. Agnes Elementary School opened up in 1917 – the name wasn’t changed to St. Agnes Cathedral School until the Diocese of Rockville Centre was established and St. Agnes became a Cathedral in 1957.  In 1895 the Rockville Centre school district voted to build a new school on Clinton Avenue. An addition was added in 1906.By the 1950’s the demand for Catholic elementary education in Rockville Centre was at an all-time high and the 10 room school on College Place could not accommodate the interested students. In 1957, after the establishment of the Rockville Centre Diocese and the designation of St. Agnes church as a cathedral, the parish purchased the Clinton Avenue School from the School District and renamed it St. Agnes Cathedral Elementary School. The north and south wings were added in the 1960’s."
       },
       "geometry": {
         "type": "Point",
@@ -62,7 +66,8 @@
         "marker-symbol": "religious-christian",
         "stop": 4,
         "name": "Ascension Episcopal Church",
-        "address": "71 North Village Avenue"
+        "address": "71 North Village Avenue",
+        "description": "The Church of Ascension is the second oldest congregation in the village, after St. Mark’s Church, and is the only congregation still in its original building. In 1887 a local congregation purchased a piece of land on the corner of North Village Avenue and School Street, now Quealy Place, belonging to Thomas and Susan Mott for $600. The first service there was held on Easter Sunday, April 21, 1889. The original rectory was built in 1892. During the Great Depression, the buildings were expanded, and DeLong & DeLong, the Philadelphia wood carvers who did the wood carvings in the chapel at Valley Forge, were commissioned to create the woodwork adorning the choir and sanctuary."
       },
       "geometry": {
         "type": "Point",
@@ -80,7 +85,8 @@
         "marker-symbol": "building",
         "stop": 5,
         "name": "The Tudor Apartments",
-        "address": "12 Hempstead Avenue"
+        "address": "12 Hempstead Avenue",
+        "description": "Completed in 1930, the Tudor Apartments was informally known as the “Wedge” because of its architecture. Notable residents include airplane pilot J.D. Jerigan, who towed the renowned Captain Frank M. Hawks through the air in a glider from the Pacific to the Atlantic, and socialites Mr. and Mrs. Charles Pringle. The Tudor one housed the Rockville Grill, owned by Karl Wegener, who also owned the Arbor Inn on Woods Avenue. During World War II, the Rockville Centre Civil Defense Unit was housed in the basement. Because it was the tallest building in RVC at the time, it also provided the perfect perch to search for any enemy planes."
       },
       "geometry": {
         "type": "Point",
@@ -98,7 +104,8 @@
         "marker-symbol": "",
         "stop": 6,
         "name": "St. Agnes Convent",
-        "address": "1 Quealy Place"
+        "address": "1 Quealy Place",
+        "description": "Completed in 1928, across the street from Ascension Church is the former St. Agnes Convert and current St. Agnes Parish Ministries Building which houses the Outreach Pantry and Bishop’s Residence.  This was once the site of Anson (Anson or Anton) Kessler’s large tailoring business. During the Civil War, Kessler made thousands of Union Army Uniforms, and donated (donated what?  Uniforms?) to the newly established RVC Fire Department, which at the time consisted of the Eureka Hook and Ladder and Bucket Company and the Live Oak Company."
       },
       "geometry": {
         "type": "Point",
@@ -116,7 +123,8 @@
         "marker-symbol": "religious-christian",
         "name": "St. Agnes Cathedral",
         "address": "29 Quealy Place",
-        "stop": 7
+        "stop": 7,
+        "description": "In 1887, the first local Catholic mass was held in John J. Johnson’s blacksmith shop. As time went on, the congregation moved to the First Public School House, and in 1905 the Reverend Peter Quealy began to acquire property around what was the old Marble Church, on the site where St. Agnes stands today. Rev. Quealy oversaw the building of an ornate Parochial School in the English Gothic Style where the current rectory now is.  The school opened in 1917.  In 1933, the old church was demolished to make room for the current church which was completed in 1935 and in 1957 was designated a Cathedral when the Diocese of Rockville Centre was formed. You will be able to spot the anvil from the old blacksmith’s shop in front of the church and a few of the marble columns left over from the old Marble Church surrounds the St. Agnes campus."
       },
       "geometry": {
         "type": "Point",
@@ -134,7 +142,8 @@
         "marker-symbol": "town-hall",
         "name": "The Eugene J. Murray Village Hall",
         "address": "1 College Place",
-        "stop": 8
+        "stop": 8,
+        "description": "The Village Hall was originally the first South Side High School, which opened in 1892 with an enrollment of 281 resident pupils and 35 non-resident pupils.  The school got its name because it was the first high school on the south shore of Long Island, east of Jamaica.  The school outgrew its building and in relocated to Hillside Avenue (currently South Side Middle School) in 1923 (or 1924?) The current South Side High School building located on Shepherd Street began construction in 1953 and opened in 1955."
       },
       "geometry": {
         "type": "Point",
@@ -145,44 +154,60 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke": "#555555",
-        "stroke-width": 0,
-        "stroke-opacity": 1,
-        "fill": "#f8fab2",
-        "fill-opacity": 0.5,
-        "name": "Business District",
-        "stop": 9
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -73.64509508013725,
-              40.658530168494345
-            ],
-            [
-              -73.6447973549366,
-              40.658530168494345
-            ],
-            [
-              -73.6447973549366,
-              40.65892897637459
-            ],
-            [
-              -73.64509508013725,
-              40.65892897637459
-            ],
-            [
-              -73.64509508013725,
-              40.658530168494345
+      "type": "FeatureCollection",
+      "features": [{
+          "type": "Feature",
+          "properties": {"name": "Business District",
+          "address": " ",
+          "stop": 9,
+          "description": "After crossing over College Place by Diamond Vision, walk down North Park Avenue about 100 feet. Here you will see the property where the Kayser Glove Company opened a factory.  In 1921, Walter V. Elliot purchased the Kayser factory and opened the George E. Badger Company in which to manufacture organ pipes. Mr. Elliot sold organ pipes all over America and even filled orders for pipes that were sent to Europe. He employed about 15 workers. The organ pipe factory burned down in 1943."
+        },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -73.64497,
+              40.65868
             ]
-          ]
-        ]
-      }
-    },
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Business District",
+            "address": " ",
+            "stop": 9,
+            "description": "After crossing over College Place by Diamond Vision, walk down North Park Avenue about 100 feet. Here you will see the property where the Kayser Glove Company opened a factory.  In 1921, Walter V. Elliot purchased the Kayser factory and opened the George E. Badger Company in which to manufacture organ pipes. Mr. Elliot sold organ pipes all over America and even filled orders for pipes that were sent to Europe. He employed about 15 workers. The organ pipe factory burned down in 1943."
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -73.64509508013725,
+                  40.658530168494345
+                ],
+                [
+                  -73.6447973549366,
+                  40.658530168494345
+                ],
+                [
+                  -73.6447973549366,
+                  40.65892897637459
+                ],
+                [
+                  -73.64509508013725,
+                  40.65892897637459
+                ],
+                [
+                  -73.64509508013725,
+                  40.658530168494345
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+        },
     {
       "type": "Feature",
       "properties": {
@@ -190,7 +215,9 @@
         "marker-size": "medium",
         "marker-symbol": "rail",
         "name": "Railroad Station Plaza",
-        "stop": 10
+        "address": " ",
+        "stop": 10,
+        "description": "The South Side Railroad steamed into the station in 1867, After three years the South side Railroad was acquired by the Long Island Railroad.  In 1898 Theodore Roosevelt made a whistle stop in Rockville Centre during his campaign for Governor of New York State.  In 1926 the first electric train pulled into the station where a large crowd had gathered to witness the new arrival, including school children waving American flags. Free round trip tickets were given to those who wished to take the train to its last stop in Babylon and return to Rockville Centre. In 1950, just when the railroad tracks were beginning to be elevated and a single track was being used for both east and west bound trains, the switchman fell asleep and this resulted in the most horrendous head on train collision in history at that time. Once the tracks were fully elevated, a ceremony took place with Thomas A. Dewey, the then Governor of New York State in attendance."
       },
       "geometry": {
         "type": "Point",
@@ -208,7 +235,8 @@
         "marker-symbol": "bank",
         "name": "Bank Building",
         "stop": 11,
-        "address": "41 Front Street"
+        "address": "41 Front Street",
+        "description": "The Valley National Bank building was originally built and established as the Nassau County National bank in 1917. It merged with the Franklin National Bank in 1955, and RVC resident Arthur J. Roth, built his Franklin National Bank into a two billion dollar institution."
       },
       "geometry": {
         "type": "Point",
@@ -226,7 +254,8 @@
         "marker-symbol": "library",
         "name": "The Old Carnegie Library Building",
         "stop": 12,
-        "address": "11 Clinton Avenue"
+        "address": "11 Clinton Avenue",
+        "description": "The Rockville Centre Library and Improvement Association was founded in 1882 and in 1894 the Rockville Centre Public Library was established under the Rockville Centre School District’s supervision.  In 1901, the school district applied for and received a $10,000 grant from the Andrew Carnegie Foundation to build a library building.  In 1912 the Rockville Centre School District appropriated funds for a new library, to supplement the $10,000 grant from the Carnegie Foundation. The library was built to house 16,000 books and space for 35 to 40 patrons. The first Children’s Librarian was Winona Caroline Martin, who took a leave of absence to join the Expeditionary Forces in France during the First World War. Unfortunately, she contracted Scarlet Fever aboard the ship carrying her there. She died in a hospital in France which was then bombed by the German Air Force.  A Library Auxiliary was formed that would later become known as the Friends of the Rockville Centre Library now located on North village Avenue. This Carnegie Library Building on Clinton Avenue is one of only three still standing on Long Island."
       },
       "geometry": {
         "type": "Point",

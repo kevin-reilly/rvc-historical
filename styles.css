@@ -16,39 +16,80 @@
   --preformatted: #444;
   --marked: #ffdd33;
   --disabled: #efefef;
-}
+} 
 
 body {
     font-family: var(--sans-font);
     background-color: rgb(255, 255, 255);
+    color: rgb(88, 88, 88);
     margin-top: 75px;
     margin-bottom: 75px;
     margin-right: 100px;
     margin-left: 100px
   }
   
-  h1 {
-    font-family: var(--sans-font);
-    font-size: 36;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-  }
+h1 {
+  font-family: var(--sans-font);
+  font-size: 36;
+  color: #274472; /*Dark Blue*/
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
-  h2{
-    font-family: var(--sans-font);
-    font-size: 28;
-    color: #5e6066    
+h2 {
+  font-family: var(--sans-font);
+  font-size: 28;
+  color: #41729F /*Midnight Blue*/
+}
+  
+p {
+  font-family: var(--sans-font);
+  color: var(--text);
+  font-size: 18px;
+  margin-bottom: 24px
+}
+
+#map { 
+  height: 100%; 
+  width: 100%;
+  align-content: center;
+}
+
+.popup_name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5885AF /*Blue Grey*/
+}
+
+.popup_address {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray
+}
+
+.popup_description {
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: var(--sans-font);
+  color: var(--text)
+}
+
+/* Media query for screens smaller than 500px wide */
+
+@media (max-width: 500px) {
+  body {
+    /*font-size: 30px; */
+    background-color: white;
+    /* line-height: 1.4; */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 10px
   }
   
-  p {
-    font-family: var(--sans-font);
-    font-size: 14px;
-    margin-bottom: 24px
-  }
 
-  #map { 
-    height: 100%; 
-    width: 100%;
-    align-content: center;
+
+  p{
+    font-size: 16px;
   }
+}
