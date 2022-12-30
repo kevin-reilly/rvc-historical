@@ -28,6 +28,7 @@
         "marker-symbol": "water",
         "stop": 2,
         "name": "Wright Pond",
+        "address": " ",
         "description": "Across from the Museum there once was a large pond named for the Wright Family, who occupied a large home on the property where Home Goods now stands. The pond became a popular place on which to go ice skating. Wright’s Pond was eventually filled in and became, in part, the parking lot for the Clinton Avenue School."
       },
       "geometry": {
@@ -156,7 +157,11 @@
       "type": "FeatureCollection",
       "features": [{
           "type": "Feature",
-          "properties": {},
+          "properties": {"name": "Business District",
+          "address": " ",
+          "stop": 9,
+          "description": "After crossing over College Place by Diamond Vision, walk down North Park Avenue about 100 feet. Here you will see the property where the Kayser Glove Company opened a factory.  In 1921, Walter V. Elliot purchased the Kayser factory and opened the George E. Badger Company in which to manufacture organ pipes. Mr. Elliot sold organ pipes all over America and even filled orders for pipes that were sent to Europe. He employed about 15 workers. The organ pipe factory burned down in 1943."
+        },
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -169,6 +174,7 @@
           "type": "Feature",
           "properties": {
             "name": "Business District",
+            "address": " ",
             "stop": 9,
             "description": "After crossing over College Place by Diamond Vision, walk down North Park Avenue about 100 feet. Here you will see the property where the Kayser Glove Company opened a factory.  In 1921, Walter V. Elliot purchased the Kayser factory and opened the George E. Badger Company in which to manufacture organ pipes. Mr. Elliot sold organ pipes all over America and even filled orders for pipes that were sent to Europe. He employed about 15 workers. The organ pipe factory burned down in 1943."
           },
@@ -209,6 +215,7 @@
         "marker-size": "medium",
         "marker-symbol": "rail",
         "name": "Railroad Station Plaza",
+        "address": " ",
         "stop": 10,
         "description": "The South Side Railroad steamed into the station in 1867, After three years the South side Railroad was acquired by the Long Island Railroad.  In 1898 Theodore Roosevelt made a whistle stop in Rockville Centre during his campaign for Governor of New York State.  In 1926 the first electric train pulled into the station where a large crowd had gathered to witness the new arrival, including school children waving American flags. Free round trip tickets were given to those who wished to take the train to its last stop in Babylon and return to Rockville Centre. In 1950, just when the railroad tracks were beginning to be elevated and a single track was being used for both east and west bound trains, the switchman fell asleep and this resulted in the most horrendous head on train collision in history at that time. Once the tracks were fully elevated, a ceremony took place with Thomas A. Dewey, the then Governor of New York State in attendance."
       },
