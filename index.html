@@ -282,7 +282,7 @@
 
         L.geoJSON(geojsonFeature, {
             onEachFeature: function(feature, layer) {
-                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">')
+                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">')
             }
         }).addTo(map);
 
