@@ -88,6 +88,10 @@ p {
   border-radius: 5px;
 }
 
+.default-img{
+  visibility:hidden;
+}
+
 /* Media query for screens smaller than 600px wide */
 
 @media (max-width: 600px) {
