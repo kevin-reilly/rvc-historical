@@ -51,6 +51,7 @@
         "stop": 1,
         "name": "The Museum of the Village of Rockville Centre",
         "address": "28 Hempstead Avenue",
+        "picture_url": "./pictures/museum.jpg",
         "description": "One of few Victorians left in Rockville Centre, the Samuel F. Phillips House, named after a local sea captain, was built in 1882. In the early 1970s, the house was nearly torn down, but instead the Village Board of Trustees arranged to have it donated it was moved and turned into a museum.  The house was purchased for $1 and in 1975, it was relocated by truck from North Village Avenue to its current location at 28 Hempstead Avenue and officially opened as a fully decorated museum in 1978."
       },
       "geometry": {
@@ -108,7 +109,7 @@
         "stop": 4,
         "name": "Ascension Episcopal Church",
         "address": "71 North Village Avenue",
-        "description": "The Church of Ascension is the second oldest congregation in the village, after St. Mark’s Church, and is the only congregation still in its original building. In 1887 a local congregation purchased a piece of land on the corner of North Village Avenue and School Street, now Quealy Place, belonging to Thomas and Susan Mott for $600. The first service there was held on Easter Sunday, April 21, 1889. The original rectory was built in 1892. During the Great Depression, the buildings were expanded, and DeLong & DeLong, the Philadelphia wood carvers who did the wood carvings in the chapel at Valley Forge, were commissioned to create the woodwork adorning the choir and sanctuary."
+        "description": "The Church of Ascension is the second oldest congregation in the village, after St. Mark\’\s Church, and is the only congregation still in its original building. In 1887 a local congregation purchased a piece of land on the corner of North Village Avenue and School Street, now Quealy Place, belonging to Thomas and Susan Mott for $600. The first service there was held on Easter Sunday, April 21, 1889. The original rectory was built in 1892. During the Great Depression, the buildings were expanded, and DeLong & DeLong, the Philadelphia wood carvers who did the wood carvings in the chapel at Valley Forge, were commissioned to create the woodwork adorning the choir and sanctuary."
       },
       "geometry": {
         "type": "Point",
@@ -127,7 +128,7 @@
         "stop": 5,
         "name": "The Tudor Apartments",
         "address": "12 Hempstead Avenue",
-        "description": "Completed in 1930, the Tudor Apartments was informally known as the “Wedge” because of its architecture. Notable residents include airplane pilot J.D. Jerigan, who towed the renowned Captain Frank M. Hawks through the air in a glider from the Pacific to the Atlantic, and socialites Mr. and Mrs. Charles Pringle. The Tudor one housed the Rockville Grill, owned by Karl Wegener, who also owned the Arbor Inn on Woods Avenue. During World War II, the Rockville Centre Civil Defense Unit was housed in the basement. Because it was the tallest building in RVC at the time, it also provided the perfect perch to search for any enemy planes."
+        "description": "Completed in 1930, the Tudor Apartments was informally known as the \“Wedge\” because of its architecture. Notable residents include airplane pilot J.D. Jerigan, who towed the renowned Captain Frank M. Hawks through the air in a glider from the Pacific to the Atlantic, and socialites Mr. and Mrs. Charles Pringle. The Tudor one housed the Rockville Grill, owned by Karl Wegener, who also owned the Arbor Inn on Woods Avenue. During World War II, the Rockville Centre Civil Defense Unit was housed in the basement. Because it was the tallest building in RVC at the time, it also provided the perfect perch to search for any enemy planes."
       },
       "geometry": {
         "type": "Point",
@@ -311,9 +312,10 @@
 
         L.geoJSON(geojsonFeature, {
             onEachFeature: function(feature, layer) {
-                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">')
-            }
-        }).addTo(map);
+                //var popup = L.popup({autoPanPadding: [100, 100, 100, 100]})
+                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">' + '<br>' + '<div class="popup_picture">' + '<img src="' + feature.properties.picture_url + '"/>' + '</div>')
+                }
+                }).addTo(map);
 
     </script>
 
