@@ -88,14 +88,6 @@ p {
   border-radius: 5px;
 }
 
-/* .popup_picture img {
-  max-width: 250px;
-  max-height: 250px;
-  border: 1px solid rgb(69, 68, 68);
-  box-shadow: 2px 2px 5px gray;
-  border-radius: 5px
-} */
-
 /* Media query for screens smaller than 600px wide */
 
 @media (max-width: 600px) {
