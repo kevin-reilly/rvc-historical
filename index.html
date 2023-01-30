@@ -99,8 +99,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.64627256989479,
-          40.660258657870834
+        -73.6465066,
+        40.6608921
         ]
       }
     },
@@ -333,7 +333,9 @@
                 } else {
                   picture = '<img class="default-img" src="default_image.png" style="visibility:hidden;"/>';
                 }
-                layer.bindPopup('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">' + '<br>' + '<div class="popup_picture">' + picture + '</div>')
+                var popup = L.popup({autoPan: true, autoPanPadding: [60, 250]})
+                .setContent('<div class="popup_name">' + feature.properties.name + '</div class="popup_name>"' + '<br>' + '<div class="popup_address">' + feature.properties.address + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div class="popup_description">' + '<br>' + '<div class="popup_picture">' + picture + '</div>');
+                layer.bindPopup(popup);
                 }
                 }).addTo(map);
 
