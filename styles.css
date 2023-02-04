@@ -69,6 +69,7 @@ p {
 
 .popup_description {
   font-size: 16px;
+  color: rgb(178, 178, 178)
   font-weight: lighter;
   font-family: var(--sans-font);
   color: var(--text)
