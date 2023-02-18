@@ -1,3 +1,3 @@
 # rvc-historical
 
-This is the repo for a historical map of downtown Rockville Centre, NY.
+This is the repo for a map of historical places in downtown Rockville Centre, NY.
