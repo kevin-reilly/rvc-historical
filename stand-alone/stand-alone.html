@@ -1,72 +1,43 @@
-<html>
+<body>
+    <head>
+        <title>RVC Walking Tour</title>
+        <link rel="stylesheet" href="styles.css">
 
-<style>
-  #map { 
-  height: 100%; 
-  width: 100%;
-  align-content: center;
-}
+        <!-- Leaflet Style Sheet -->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" 
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+            
+        <!-- Leaflet JS -->    
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+        
+        <!-- Mobile formatting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-.popup_name {
-  font-size: 24px;
-  font-weight: bold;
-  color: #5885AF /*Blue Grey*/
-}
 
-.popup_address {
-  font-size: 18px;
-  font-weight: bold;
-  color: gray
-}
+    </head>
 
-.popup_description {
-  font-size: 16px;
-  color: rgb(178, 178, 178)
-  font-weight: lighter;
-  font-family: var(--sans-font);
-  color: var(--text)
-}
+<h1>Rockville Centre Historical Society</h1>
 
-.popup_picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+<h2>Walking Tour of Rockville Centre</h2>
 
-.popup_picture img {
-  max-width: 100%;
-  max-height: 100%;
-  border: 1px solid rgb(88, 88, 88);
-  box-shadow: 2px 2px 5px gray;
-  border-radius: 5px;
-}
-
-.default-img{
-  visibility:hidden;
-}
-
-</style>
-
-<!-- Leaflet Style Sheet -->
-<link rel="stylesheet" 
-    href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" 
-    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-    crossorigin=""/>
-    
-<!-- Leaflet JS -->    
-<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-    crossorigin=""></script>        
+<p>
+    This is a map of a walking tour of Rockville Centre Starting at the Phillips House Museum.
+</p>
 
 <div id="map">
     
-  <script>
+    <script>
 
-  var map = L.map('map', {minZoom: 15,}).setView([40.66,-73.6466], 17);
+    var map = L.map('map').setView([40.66,-73.6466], 17);
 
-  L.tileLayer('http://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
+    L.tileLayer('http://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
 /* Beginning of Feature Data in GeoJSON */
 
@@ -362,20 +333,20 @@
                 } else {
                   picture = '<img class="default-img" src="default_image.png" style="visibility:hidden;"/>';
                 }
-                var popup = L.popup({autoPan: true, keepInView: true, maxHeight: 500, autoPanPadding: [50, 50]})
+                var popup = L.popup({autoPan: true, autoPanPadding: [60, 250]})
                 .setContent('<div class="popup_name">' + feature.properties.name + '</div>' + '<br>' + '<div class="popup_address">' + feature.properties.address + '</div>' + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div>' + '<br>' + '<div class="popup_picture">' + picture + '</div>');
-                
                 layer.bindPopup(popup);
-                
+
+                popup.on('close', function() {
+                  map.invalidateSize();
+                });
               }
             }).addTo(map);
-
-        map.on("popupclose", function() {
-            map.setView([40.66,-73.6466], 17);
-            })
 
     </script>
 
 </div>
 
-</html>
+</body>
+
+
