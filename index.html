@@ -364,20 +364,16 @@
                 }
                 var popup = L.popup({autoPan: true, keepInView: true, maxHeight: 500, autoPanPadding: [50, 50]})
                 .setContent('<div class="popup_name">' + feature.properties.name + '</div>' + '<br>' + '<div class="popup_address">' + feature.properties.address + '</div>' + '<br>' + '<br>' + '<div class="popup_description">' + feature.properties.description + '</div>' + '<br>' + '<div class="popup_picture">' + picture + '</div>');
+                
                 layer.bindPopup(popup);
-
-              
+                
               }
             }).addTo(map);
 
-        popup.on('popopen', function() {
-          console.log("foobar");
-        });
-        
-        popup.on('popupclose', function() {
-            console.log("click closed ")
+        map.on("popupclose", function() {
+            console.log("closing popup!!!!")
             map.setView([40.66,-73.6466], 17);
-            });
+            })
 
     </script>
 
